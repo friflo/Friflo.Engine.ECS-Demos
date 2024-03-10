@@ -69,15 +69,6 @@ namespace MonoGame
 
 		protected override void LoadContent()
 		{
-#if WASM_BUILD
-			var names = typeof(Game1).Assembly.GetManifestResourceNames();
-			Console.WriteLine($"------------ Embedded Resources: {names.Length}");	
-
-			foreach (var name in names) {
-				Console.WriteLine(name);	
-			}
-			Content.ResourceAssembly = typeof(Game1).Assembly;
-#endif
 			cube = Content.Load<Model>("cube");
 			gui.LoadContent(Content);
 		}
@@ -129,9 +120,6 @@ namespace MonoGame
 			if (mouseState.LeftButton	  == ButtonState.Pressed &&
 			    lastMouseState.LeftButton == ButtonState.Released) {
 				var position = Mouse.GetState().Position;
-#if WASM_BUILD
-				position += Window.ClientBounds.Location;
-#endif
 				var key = gui.FindButton(position);
 				HandleAction(key);
 			}
