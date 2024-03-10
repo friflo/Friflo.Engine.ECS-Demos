@@ -7,7 +7,7 @@ in various game engines.
 - [MonoGame](MonoGame)
 - [Unity](Unity)
 
-All projects are using the same [code](./Godot/Drones.cs) to animate cubes using multiple
+All projects are using the same [source code](./Godot/Drones.cs) to animate cubes using multiple
 [ArchetypeQuery](https://github.com/friflo/Friflo.Engine-docs/blob/main/api/ArchetypeQuery.md)'s.
 
 
