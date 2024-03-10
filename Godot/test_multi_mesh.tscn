@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://mekfn4g53vr4"]
+
+[ext_resource type="Script" path="res://MoveDrones.cs" id="1_j5y5f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ww7mu"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pij3g"]
+material = SubResource("StandardMaterial3D_ww7mu")
+
+[sub_resource type="BoxMesh" id="BoxMesh_os0h3"]
+
+[sub_resource type="MultiMesh" id="MultiMesh_wcvju"]
+transform_format = 1
+mesh = SubResource("BoxMesh_os0h3")
+
+[node name="Test MultiMesh" type="Node3D"]
+
+[node name="Plane" type="MeshInstance3D" parent="."]
+transform = Transform3D(25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -2, 0)
+mesh = SubResource("PlaneMesh_pij3g")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.864968, 0.501827, 0, -0.501827, 0.864968, 0, 19.0927, 35.2119)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.990507, 0, 0.137462, -0.0589254, 0.903463, 0.424598, -0.124192, -0.428667, 0.894886, 0, 0, 0)
+
+[node name="MultiMeshInstance3D-Cube" type="MultiMeshInstance3D" parent="."]
+multimesh = SubResource("MultiMesh_wcvju")
+script = ExtResource("1_j5y5f")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 129.0
+offset_bottom = 251.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 26.0
+offset_right = 108.0
+offset_bottom = 249.0
+
+[node name="Plane" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Plane"
+
+[node name="Cube" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Cube"
+
+[node name="Ring" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Ring"
+
+[node name="Rings" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Rings"
+
+[node name="Inc" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "* 2"
+
+[node name="Dec" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "/ 2"
+
+[connection signal="pressed" from="Panel/VBoxContainer/Plane" to="MultiMeshInstance3D-Cube" method="SetTargetPlane"]
+[connection signal="pressed" from="Panel/VBoxContainer/Cube" to="MultiMeshInstance3D-Cube" method="SetTargetCube"]
+[connection signal="pressed" from="Panel/VBoxContainer/Ring" to="MultiMeshInstance3D-Cube" method="SetTargetRing"]
+[connection signal="pressed" from="Panel/VBoxContainer/Rings" to="MultiMeshInstance3D-Cube" method="SetTargetRings"]
+[connection signal="pressed" from="Panel/VBoxContainer/Inc" to="MultiMeshInstance3D-Cube" method="IncreaseEntities"]
+[connection signal="pressed" from="Panel/VBoxContainer/Dec" to="MultiMeshInstance3D-Cube" method="DecreaseEntities"]
