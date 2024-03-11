@@ -8,10 +8,8 @@ in various game engines.
 - [Unity](Unity) - Windows, macOS, Linux
 
 All projects are using the same [source code](./Godot/Drones.cs) to animate cubes using multiple
-[ArchetypeQuery](https://github.com/friflo/Friflo.Engine-docs/blob/main/api/ArchetypeQuery.md)'s.
-
-
-The screenshot blow links to MonoGame WebAssembly build using the same animation code.
+[ArchetypeQuery](https://github.com/friflo/Friflo.Engine-docs/blob/main/api/ArchetypeQuery.md)'s.  
+The screenshot below is a MonoGame WebAssembly build demonstrating the animation with a low amount of entities.
 
 <a href="https://sdl-wasm-sample-web.vercel.app/docs/MonoGame/">
 <img src="https://raw.githubusercontent.com/friflo/Friflo.Engine-docs/main/docs/images/MonoGame-wasm.png" width="600" height="405"/>
