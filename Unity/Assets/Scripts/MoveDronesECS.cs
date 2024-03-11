@@ -27,11 +27,11 @@ public class MoveDronesECS : MonoBehaviour
         drones = new Drones();
         drones.Initialize();
         drones.SetEntityCount(entityCount);
-        drones.SetTargetRings(2000, 100, 5f, 10);
+        drones.SetTargetPlane(500, 1.2f);
         UpdateGuiCount();
         rp          = new RenderParams(material);
         instData    = new Matrix4x4[drones.maxDroneCount];
-        transform.Find("Editor Plane").gameObject.SetActive(false);
+        //transform.Find("Editor Plane").gameObject.SetActive(false);
     }
     
     private void UpdateGuiCount() {
@@ -43,10 +43,10 @@ public class MoveDronesECS : MonoBehaviour
         this.shape = shape;
         switch (shape)
         {
-            case Shape.Plane:	drones.SetTargetPlane(500, 5f); 		    break;
-            case Shape.Cube:	drones.SetTargetCube (500, 5f);			    break;
-            case Shape.Ring:	drones.SetTargetRings(500, 120, 5f, 1);		break;
-            case Shape.Rings:	drones.SetTargetRings(500, 100, 5f, 10);	break;
+            case Shape.Plane:	drones.SetTargetPlane(500, 1.2f); 		    break;
+            case Shape.Cube:	drones.SetTargetCube (500, 1.2f);			break;
+            case Shape.Ring:	drones.SetTargetRings(500, 24, 1.2f, 1);	break;
+            case Shape.Rings:	drones.SetTargetRings(500, 20, 1.2f, 10);	break;
         }
     }
     
