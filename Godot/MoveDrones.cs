@@ -13,9 +13,15 @@ public partial class MoveDrones : MultiMeshInstance3D
 	private readonly	Drones		drones		= new Drones();
 	private				int			entityCount	= 1024;
 	private				Shape		shape;
+	private				Label		labelCount;
+	private				Label		labelFps;
 	
 	public override void _Ready()
 	{
+		var root	= GetTree().Root;
+		labelCount	= root.GetNode<Label>("Test/Panel/Info/Entities");
+		labelFps	= root.GetNode<Label>("Test/Panel/Info/FPS");
+		labelCount.Text = $"Entities {entityCount}";
 		Multimesh.InstanceCount = entityCount;
 		for(int i = 0; i < Multimesh.InstanceCount; i++)
 		{
@@ -50,12 +56,14 @@ public partial class MoveDrones : MultiMeshInstance3D
 	public void IncreaseEntities() {
 		entityCount = Math.Min(drones.maxDroneCount, entityCount * 2);
 		drones.SetEntityCount(entityCount);
+		labelCount.Text = $"Entities {entityCount}";
 		SetShape(shape);
 	}
 	
 	public void DecreaseEntities() {
 		entityCount = Math.Max(4, entityCount / 2);
 		drones.SetEntityCount(entityCount);
+		labelCount.Text = $"Entities {entityCount}";
 		SetShape(shape);
 	}
 
@@ -69,6 +77,7 @@ public partial class MoveDrones : MultiMeshInstance3D
 	
 	private void DrawEntities()
 	{
+		labelFps.Text = $"fps {Engine.GetFramesPerSecond()}";
 		var mesh = Multimesh;
 		mesh.InstanceCount = entityCount;
 		foreach (var (transforms, _) in drones.transQuery.Chunks)

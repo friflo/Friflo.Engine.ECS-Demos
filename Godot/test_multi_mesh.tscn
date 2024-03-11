@@ -14,7 +14,7 @@ material = SubResource("StandardMaterial3D_ww7mu")
 transform_format = 1
 mesh = SubResource("BoxMesh_os0h3")
 
-[node name="Test MultiMesh" type="Node3D"]
+[node name="Test" type="Node3D"]
 
 [node name="Plane" type="MeshInstance3D" parent="."]
 transform = Transform3D(25, 0, 0, 0, 1, 0, 0, 0, 25, 0, -2, 0)
@@ -65,6 +65,21 @@ text = "* 2"
 [node name="Dec" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 text = "/ 2"
+
+[node name="Info" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 27.0
+offset_right = 293.0
+offset_bottom = 100.0
+
+[node name="Entities" type="Label" parent="Panel/Info"]
+layout_mode = 2
+text = "Entities"
+
+[node name="FPS" type="Label" parent="Panel/Info"]
+layout_mode = 2
+text = "FPS"
 
 [connection signal="pressed" from="Panel/VBoxContainer/Plane" to="MultiMeshInstance3D-Cube" method="SetTargetPlane"]
 [connection signal="pressed" from="Panel/VBoxContainer/Cube" to="MultiMeshInstance3D-Cube" method="SetTargetCube"]
