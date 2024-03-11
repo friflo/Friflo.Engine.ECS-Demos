@@ -2,7 +2,10 @@
 # MonoGame Project Setup
 
 
-This MonoGame project was created following the instructions at:
+This MonoGame project was created by executing the instructions below.
+
+
+### Create MonoGame project
 
 - [Getting Started - MonoGame](https://monogame.net/articles/getting_started/index.html)
 
@@ -12,3 +15,9 @@ This MonoGame project was created following the instructions at:
 
     - [.NET CLI - JetBrains Rider or Visual Studio Code](https://monogame.net/articles/getting_started/2_creating_a_new_project_netcore.html)
 
+
+### Add nuget package: Friflo.Engine.ECS
+
+```
+dotnet add package Friflo.Engine.ECS
+```
