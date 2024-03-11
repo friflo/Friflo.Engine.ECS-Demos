@@ -31,7 +31,7 @@ public class MoveDronesECS : MonoBehaviour
         UpdateGuiCount();
         rp          = new RenderParams(material);
         instData    = new Matrix4x4[drones.maxDroneCount];
-        //transform.Find("Editor Plane").gameObject.SetActive(false);
+        GameObject.Find("Editor Plane").gameObject.SetActive(false);
     }
     
     private void UpdateGuiCount() {
