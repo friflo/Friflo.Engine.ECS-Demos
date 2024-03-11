@@ -1,6 +1,9 @@
 
 # Godot Project Setup
 
+
+Platforms: **Windows**, **macOS**, **Linux**
+
 This Godot project was created executing the following steps:
 
 

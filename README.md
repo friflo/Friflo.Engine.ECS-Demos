@@ -3,9 +3,9 @@
 This repository contains demos showing integration of [Friflo.Engine.ECS](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Engine/README.md)
 in various game engines.
 
-- [Godot](Godot)
-- [MonoGame](MonoGame)
-- [Unity](Unity)
+- [Godot](Godot) - Windows, macOS, Linux
+- [MonoGame](MonoGame) - Windows
+- [Unity](Unity) - Windows, macOS, Linux
 
 All projects are using the same [source code](./Godot/Drones.cs) to animate cubes using multiple
 [ArchetypeQuery](https://github.com/friflo/Friflo.Engine-docs/blob/main/api/ArchetypeQuery.md)'s.

@@ -1,6 +1,8 @@
 
 # Unity Project Setup
 
+Platforms: **Windows**, **macOS**, **Linux**
+
 Friflo.Engine.ECS is added as a nuget package using [NuGetForUnity - GitHub](https://github.com/GlitchEnzo/NuGetForUnity).  
 NuGetForUnity **must be installed** in Unity to add Friflo.Engine.ECS as nuget package.
 

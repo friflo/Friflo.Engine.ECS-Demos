@@ -1,6 +1,7 @@
 
 # MonoGame Project Setup
 
+Platforms: **Windows**
 
 This MonoGame project was created by executing the instructions below.
 
