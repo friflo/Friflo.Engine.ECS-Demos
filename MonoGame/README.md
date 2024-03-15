@@ -1,3 +1,8 @@
+# Description
+
+Animate (move) the drone cubes using `ArchetypeQuery`'s.  
+Render cubes using `ModelMesh.Draw()`.
+
 
 # MonoGame Project Setup
 

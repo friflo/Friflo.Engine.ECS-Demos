@@ -1,4 +1,10 @@
 
+# Description
+
+Animate (move) the drone cubes using `ArchetypeQuery`'s.  
+Render cubes via GPU instancing with `Graphics.RenderMeshInstanced()`.
+
+
 # Unity Project Setup
 
 Platforms: **Windows**, **macOS**, **Linux**

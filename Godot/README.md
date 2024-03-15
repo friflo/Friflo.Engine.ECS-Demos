@@ -1,3 +1,8 @@
+# Description
+
+Animate (move) the drone cubes using `ArchetypeQuery`'s.  
+Render cubes via GPU instancing using a single `MultiMeshInstance3D`.
+
 
 # Godot Project Setup
 
