@@ -59,13 +59,7 @@ public class Drones
     public void Initialize()
     {
         for (int n = 0; n < maxDroneCount; n++) {
-            store.Batch()
-                .Add(new Position())
-                .Add(new Start())
-                .Add(new Target())
-                .Add(new Transform())
-                .Disable()
-                .CreateEntity();
+            store.CreateEntity(new Position(), new Start(), new Target(), new Transform(), Tags.Get<Disabled>());
         }
     }
     
