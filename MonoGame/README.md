@@ -6,9 +6,20 @@ Render cubes using `ModelMesh.Draw()`.
 
 # MonoGame Project Setup
 
-Platforms: **Windows**
+Platforms: **Windows**, **macOS**,
 
 This MonoGame project was created by executing the instructions below.
+
+
+### macOS
+
+For macOS ARM the .NET Core CLI need to be set to: `/usr/local/share/dotnet/x64/dotnet`
+
+See: https://community.monogame.net/t/textureimporter-error-mac-os-monterey-12-6/18049/13
+
+In Rider: **Settings | Build, Execution, Deployment | Toolset and Build | .NET CLI executable path** 
+
+
 
 
 ### Create MonoGame project
