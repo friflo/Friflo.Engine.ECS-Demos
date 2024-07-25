@@ -1,5 +1,10 @@
 # Friflo.Engine.ECS-Demos
 
+[![Github Repo](https://img.shields.io/badge/Friflo.Engine.ECS-blue)](https://github.com/friflo/Friflo.Engine.ECS)
+[![C# API](https://img.shields.io/badge/C%23%20API-22aaaa)](https://github.com/friflo/Friflo.Engine-docs)
+[![Github Repo](https://img.shields.io/badge/Wiki-C200FF)](https://friflo.gitbook.io/friflo.engine.ecs)
+
+
 This repository contains demos showing integration of [Friflo.Engine.ECS](https://github.com/friflo/Friflo.Engine.ECS)
 in various game engines.
 
