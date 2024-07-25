@@ -1,6 +1,6 @@
 # Friflo.Engine.ECS-Demos
 
-This repository contains demos showing integration of [Friflo.Engine.ECS](https://github.com/friflo/Friflo.Json.Fliox/blob/main/Engine/README.md)
+This repository contains demos showing integration of [Friflo.Engine.ECS](https://github.com/friflo/Friflo.Engine.ECS)
 in various game engines.
 
 - [Godot](Godot) - Windows, macOS, Linux
