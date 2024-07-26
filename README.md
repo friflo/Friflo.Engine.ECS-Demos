@@ -1,8 +1,8 @@
 # Friflo.Engine.ECS-Demos
 
-[![Github Repo](https://img.shields.io/badge/Friflo.Engine.ECS-blue)](https://github.com/friflo/Friflo.Engine.ECS)
-[![C# API](https://img.shields.io/badge/C%23%20API-22aaaa)](https://github.com/friflo/Friflo.Engine-docs)
-[![Wiki](https://img.shields.io/badge/Wiki-A200FF)](https://friflo.gitbook.io/friflo.engine.ecs)
+[![Github Repo](https://img.shields.io/badge/Friflo.Engine.ECS-blue?logo=github&logoColor=white)](https://github.com/friflo/Friflo.Engine.ECS)
+[![C# API](https://img.shields.io/badge/C%23%20API-22aaaa?logo=github&logoColor=white)](https://github.com/friflo/Friflo.Engine-docs)
+[![Wiki](https://img.shields.io/badge/Wiki-A200FF?logo=gitbook&logoColor=white)](https://friflo.gitbook.io/friflo.engine.ecs)
 
 
 This repository contains demos showing integration of [Friflo.Engine.ECS](https://github.com/friflo/Friflo.Engine.ECS)
