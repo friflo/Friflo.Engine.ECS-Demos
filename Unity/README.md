@@ -44,5 +44,9 @@ This project was created by executing the following steps.
     ```
     Friflo.Engine.ECS
     ```
- 
+### Add / Run Test scene
+
+1. Open:   Unity > File > Open Scene
+2. Select: Unity/Assets/Scenes/SampleScene
+3. Click Play
   
