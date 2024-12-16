@@ -4,6 +4,6 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Friflo.Engine.ECS" Version="3.0.0-preview.7" />
+    <PackageReference Include="Friflo.Engine.ECS" Version="3.0.0" />
   </ItemGroup>
 </Project>
